@@ -31,7 +31,7 @@ def article_detail(request, pk):
     
     elif request.method == "PUT":
         article = get_object_or_404(Article, pk=pk)
-        serializer = ArticleSerializer(article, data=request.data)
+        serializer = ArticleSerializer(article, data=request.data, partial=True)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
