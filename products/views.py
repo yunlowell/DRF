@@ -21,13 +21,20 @@ def article_list(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         
-# 글 상세 조회, 삭제
-@api_view(["GET", "DELETE"])
+# 글 상세 조회, 수정, 삭제
+@api_view(["GET", "PUT", "DELETE"])
 def article_detail(request, pk):
     if request.method == "GET":
         article = get_object_or_404(Article, pk=pk)
         serializer = ArticleSerializer(article)
         return Response(serializer.data)
+    
+    elif request.method == "PUT":
+        article = get_object_or_404(Article, pk=pk)
+        serializer = ArticleSerializer(article, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data)
     
     elif request.method == "DELETE":
         article = get_object_or_404(Article, pk=pk)
