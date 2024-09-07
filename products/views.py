@@ -8,10 +8,14 @@ from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
 from .models import Article
-from .serializers import (ArticleSerializer)
+from .serializers import ArticleSerializer
 # Create your views here.
 # 글 목록 조회, 글 생성
 class ArticleListAPIView(APIView):
+
+    # user가 아니면 기능 접근 제한
+    permission_classes = [IsAuthenticated]
+
     def get(self, request):
         articles = Article.objects.all()
         serializer = ArticleSerializer(articles, many=True)
@@ -25,6 +29,9 @@ class ArticleListAPIView(APIView):
         
 # 글 상세 조회, 수정, 삭제
 class ArticleDetailAPIView(APIView):
+
+    permission_classes = [IsAuthenticated]
+
 
     def get_object(self, pk):
         return get_object_or_404(Article, pk=pk)
