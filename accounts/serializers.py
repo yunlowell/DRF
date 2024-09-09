@@ -15,7 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
             'password': {'write_only': True},
         }
     # 이메일 유효성 검사
-    def validate_이메일(self, value):
+    def validate_email(self, value):
         if User.objects.filter(email=value).exists():
             raise serializers.ValidationError("이 이메일은 이미 사용 중입니다.")
         return value

@@ -9,4 +9,4 @@ class User(AbstractUser):
     nickname = models.CharField(max_length=10, unique=True, default='닉네임을 설정해주세요')
     birthday = models.DateField(default='1990-01-01')
     gender = models.CharField(max_length=10, blank=True, null=True)
-    bio = models.TextField(blank=True, null=True)
+    bio = models.TextField(max_length=200, blank=True, null=True)
