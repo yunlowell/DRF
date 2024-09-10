@@ -167,6 +167,7 @@ Django의 확장 패키지인 DRF를 사용하여 구현한 Sparta market은 중
 
   **폴더 구조**
   ---
+  ```
   Spartamarket_DRF
   |
   |--accounts/    # 사용자 인증 권한을 처리하는 앱
@@ -176,3 +177,4 @@ Django의 확장 패키지인 DRF를 사용하여 구현한 Sparta market은 중
   |--.gitignore   # git에서 무시할 파일 및 디렉터리
   |--manage.py    # Django 관리 명령 파일
   |--reqirements.txt      # 프로젝트의 속성 목록
+  ```
