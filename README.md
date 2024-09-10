@@ -42,25 +42,34 @@ Version Control: Git, GitHub
 ---
 - Create Article
 <img width="983" alt="KakaoTalk_20240910_111813745_11" src="https://github.com/user-attachments/assets/47ac1f3e-718f-4491-890a-ddf59add971d">
+
 - View Article List
 <img width="1010" alt="KakaoTalk_20240910_111813745_02" src="https://github.com/user-attachments/assets/0a957864-c2c7-4ac8-87a7-26bd28a1e498">
+
 - View Article Detail
 <img width="1001" alt="KakaoTalk_20240910_111813745" src="https://github.com/user-attachments/assets/24de8ef3-5979-43c7-abc6-e8f2f11c5d1f">
+
 - Update Article
   When the user is the owner:
 <img width="1023" alt="KakaoTalk_20240910_111813745_08" src="https://github.com/user-attachments/assets/2622926b-70b7-4168-b198-6df5869b113f">
   When the user is not the owner:
 <img width="999" alt="KakaoTalk_20240910_111813745_06" src="https://github.com/user-attachments/assets/54925fb9-7efc-4d8f-b452-e834ce0241c0">
+
 - Delete Article
 <img width="1004" alt="KakaoTalk_20240910_111813745_09" src="https://github.com/user-attachments/assets/674164c7-eb64-4be2-88af-d8d84f80ca0a">
+
 - Login
 <img width="999" alt="KakaoTalk_20240910_111813745_07" src="https://github.com/user-attachments/assets/fede2457-dbd0-498c-8447-6e2eb153b6bc">
+
 - Sign-up
 <img width="991" alt="KakaoTalk_20240910_111813745_03" src="https://github.com/user-attachments/assets/1415b47f-ec48-4295-9073-d00ba73a9374">
+
 - View Profile
 <img width="1015" alt="KakaoTalk_20240910_111813745_10" src="https://github.com/user-attachments/assets/ffb12780-a780-443c-b318-e43648ad2398">
+
 - Token
 <img width="1009" alt="KakaoTalk_20240910_111813745_05" src="https://github.com/user-attachments/assets/f396b418-b360-4c10-9ef2-75fb4f931972">
+
 **Project Structure**
 ---
 ```
@@ -127,23 +136,30 @@ Django의 확장 패키지인 DRF를 사용하여 구현한 Sparta market은 중
   ---
   - Article 생성
   <img width="983" alt="KakaoTalk_20240910_111813745_11" src="https://github.com/user-attachments/assets/47ac1f3e-718f-4491-890a-ddf59add971d">
+
   - Article 목록조회
   <img width="1010" alt="KakaoTalk_20240910_111813745_02" src="https://github.com/user-attachments/assets/0a957864-c2c7-4ac8-87a7-26bd28a1e498">
+
   - Article 상세 조회
   <img width="1001" alt="KakaoTalk_20240910_111813745" src="https://github.com/user-attachments/assets/24de8ef3-5979-43c7-abc6-e8f2f11c5d1f">
+
   - Article 수정
   본인 글일 때
   <img width="1023" alt="KakaoTalk_20240910_111813745_08" src="https://github.com/user-attachments/assets/2622926b-70b7-4168-b198-6df5869b113f">
   다른 사람의 글일 때
   <img width="999" alt="KakaoTalk_20240910_111813745_06" src="https://github.com/user-attachments/assets/54925fb9-7efc-4d8f-b452-e834ce0241c0">
+
   - Article 삭제
   <img width="1004" alt="KakaoTalk_20240910_111813745_09" src="https://github.com/user-attachments/assets/674164c7-eb64-4be2-88af-d8d84f80ca0a">
+
   - Login
   <img width="999" alt="KakaoTalk_20240910_111813745_07" src="https://github.com/user-attachments/assets/fede2457-dbd0-498c-8447-6e2eb153b6bc">
   - 회원가입
   <img width="991" alt="KakaoTalk_20240910_111813745_03" src="https://github.com/user-attachments/assets/1415b47f-ec48-4295-9073-d00ba73a9374">
+
   - Profile 조회
   <img width="1015" alt="KakaoTalk_20240910_111813745_10" src="https://github.com/user-attachments/assets/ffb12780-a780-443c-b318-e43648ad2398">
+
   - Token
   <img width="1009" alt="KakaoTalk_20240910_111813745_05" src="https://github.com/user-attachments/assets/f396b418-b360-4c10-9ef2-75fb4f931972">
 
