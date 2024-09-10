@@ -43,6 +43,9 @@ class ArticleDetailAPIView(APIView):
     
     def put(self, request, pk):
         article = self.get_object(pk)
+        if article.user != request.user:  # 게시글 작성자 확인
+            return Response({"detail": "수정 권한이 없습니다."}, status=status.HTTP_403_FORBIDDEN)
+        
         serializer = ArticleSerializer(article, data=request.data, partial=True)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
