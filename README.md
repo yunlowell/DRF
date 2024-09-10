@@ -50,6 +50,7 @@ Version Control: Git, GitHub
 <img width="1001" alt="KakaoTalk_20240910_111813745" src="https://github.com/user-attachments/assets/24de8ef3-5979-43c7-abc6-e8f2f11c5d1f">
 
 - Update Article
+
   When the user is the owner:
 <img width="1023" alt="KakaoTalk_20240910_111813745_08" src="https://github.com/user-attachments/assets/2622926b-70b7-4168-b198-6df5869b113f">
   When the user is not the owner:
@@ -144,6 +145,7 @@ Django의 확장 패키지인 DRF를 사용하여 구현한 Sparta market은 중
   <img width="1001" alt="KakaoTalk_20240910_111813745" src="https://github.com/user-attachments/assets/24de8ef3-5979-43c7-abc6-e8f2f11c5d1f">
 
   - Article 수정
+  
   본인 글일 때
   <img width="1023" alt="KakaoTalk_20240910_111813745_08" src="https://github.com/user-attachments/assets/2622926b-70b7-4168-b198-6df5869b113f">
   다른 사람의 글일 때
