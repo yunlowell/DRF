@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from django.http import JsonResponse, HttpResponse
-from django.core import serializers
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -13,20 +11,22 @@ from .serializers import ArticleSerializer
 # 글 목록 조회, 글 생성
 class ArticleListAPIView(APIView):
 
-    # user가 아니면 기능 접근 제한
-    permission_classes = [IsAuthenticated]
 
     def get(self, request):
         articles = Article.objects.all()
         serializer = ArticleSerializer(articles, many=True)
         return Response(serializer.data)
     
+    # user가 아니면 기능 접근 제한
+
     def post(self, request):
+        self.permission_classes = [IsAuthenticated]
         serializer = ArticleSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save()
+            serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
-        
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 # 글 상세 조회, 수정, 삭제
 class ArticleDetailAPIView(APIView):
 
